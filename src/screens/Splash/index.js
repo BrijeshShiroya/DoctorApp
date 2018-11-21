@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, TouchableOpacity, Text } from 'react-native';
 import styles from './style';
 
 export default class Splash extends Component {
     render() {
         return (
-            <View style={styles.container} />
+            <View style={styles.container}>
+
+                <TouchableOpacity
+                    style={{ height: 100, width: 200, backgroundColor: 'red' }}
+                    onPress={() => {
+                        this.props.navigation.navigate('Home')
+                    }}><Text>Home</Text></TouchableOpacity>
+            </View>
         );
     }
 }
