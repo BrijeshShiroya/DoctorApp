@@ -10,7 +10,7 @@ export default class Splash extends Component {
                 <TouchableOpacity
                     style={{ height: 100, width: 200, backgroundColor: 'red' }}
                     onPress={() => {
-                        this.props.navigation.navigate('Home')
+                        this.props.navigation.navigate('DrawerMenu')
                     }}><Text>Home</Text></TouchableOpacity>
             </View>
         );
