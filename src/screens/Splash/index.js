@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { View, TouchableOpacity, Text, Image } from 'react-native';
-import * as icons from 'icons';
+import icons from 'icons';
 import styles from './style';
 
 export default class Splash extends Component {
 
     componentWillMount() {
         setTimeout(() => {
-            this.props.navigation.navigate('Login')
+            this.props.navigation.navigate('Home')
         }, 2500);
     }
     render() {
